@@ -8,14 +8,12 @@ class Employee {
     String name;
     int salary;
 
-    // Constructor
     public Employee(int id, String name, int salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
     }
 
-    // toString method for printing
     public String toString() {
         return id + " " + name + " " + salary;
     }
@@ -28,7 +26,6 @@ public class Main {
         li.add(new Employee(200, "Varun", 10000));
         li.add(new Employee(300, "Riya", 22000));
 
-        // Example: Filter employees with salary > 15000
         List<Employee> filtered = li.stream()
             .filter(e -> e.salary > 15000)
             .collect(Collectors.toList());

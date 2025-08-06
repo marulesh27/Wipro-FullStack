@@ -8,7 +8,7 @@ public class PasswordGenerator {
         int rem=n%3;
         int part1Len = base;
         int part2Len = base+rem;
-        //int part3Len = n - (part1Len + part2Len);
+        //part3Len = n - (part1Len + part2Len);
 
         String part1 = word.substring(0, part1Len);
         String part2 = word.substring(part1Len, part1Len + part2Len);
